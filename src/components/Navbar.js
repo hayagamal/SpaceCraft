@@ -18,13 +18,13 @@ function Navbar() {
         <div className='line'>
             <hr/>
         </div>
-        <div id="navbar-reg" className='nav responsive'>
+        <div id="navbar-reg" className='nav'>
             <ul>
             <NavLink className="mobile" id="mobile-nav" activeclassname="active" onClick={()=> sideBar()}><BiMenu/></NavLink>
-                <NavLink className="navs" activeclassname="active" to={"/"}><span>00</span> HOME</NavLink>
-                <NavLink className="navs" activeclassname="active" to={"/destination"}><span>01</span> DESTINATION</NavLink>
-                <NavLink className="navs" activeclassname="active" to={"/crew"}><span>02</span> CREW</NavLink>
-                <NavLink className="navs" activeclassname="active" to={"/tech"}><span>03</span> TECHNOLOGY</NavLink>
+                <NavLink className="navs" onClick={()=> document.getElementById('navbar-reg').className = 'nav'} activeclassname="active" to={"/"}><span>00</span> HOME</NavLink>
+                <NavLink className="navs"  onClick={()=> document.getElementById('navbar-reg').className = 'nav'} activeclassname="active" to={"/destination"}><span>01</span> DESTINATION</NavLink>
+                <NavLink className="navs"  onClick={()=> document.getElementById('navbar-reg').className = 'nav'} activeclassname="active" to={"/crew"}><span>02</span> CREW</NavLink>
+                <NavLink className="navs"  onClick={()=> document.getElementById('navbar-reg').className = 'nav'} activeclassname="active" to={"/tech"}><span>03</span> TECHNOLOGY</NavLink>
                 
             </ul>
         </div>
