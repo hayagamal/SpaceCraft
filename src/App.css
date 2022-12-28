@@ -1,38 +1,318 @@
-.App {
-  text-align: center;
+.parent{
+  max-width: 100%;
+  height: 47.1rem;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.container-home{
+ 
+ color: white;
+ background-image: url('images/background-home-desktop.jpg');
+ background-position: center;
+ background-size: cover;
+ max-width: 100%;
+  height: 100%;
 }
+img{
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+  position: absolute;
 }
+.content-home{
+  display: flex;
+  flex-direction: row;
+  gap: 150px;
+  justify-content: space-around;
+  padding: 220px 50px 0px 50px;
+  
+}
+.text-home h3{
+  font-family: 'Barlow Condensed';
+  font-weight: normal;
+  letter-spacing: 5px;
+  color:#d0d6f9;
+}
+.text-home h1{
+font-size: 140px;
+font-weight: lighter;
+margin: 0px;
+padding-left: 0px;
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+}
+.text-home{
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  justify-content: space-evenly;
+}
+.container-home p{
+  width: 365px;
+  text-align: justify;
+  font-family: 'Barlow Condensed';
+  color: #d0d6f9;
+  font-size: 17px;
+  line-height: 30px;
+  letter-spacing: 1.5px;
+  
+}
+.explore{
+  height: 270px;
+  width: 270px;
+  background-color: white;
+  border-radius: 50%;
+  margin-top: 100px;
+  border: none;
+  font-size: 37px;
+  color: #0b0d17;
+  font-family: 'Barlow Condensed';
+  font-weight: lighter;
+  letter-spacing: 4px;
+  z-index: 2;
+  cursor: pointer;
+  
+}
+.nav{
+  background-color: rgba(157, 155, 155, 0.089);
+  height: 60px;
+  padding: 20px 0px 5px 5px;
+  font-size: 15px;
+  font-family: 'Barlow Condensed';
+  width: 900px;
+}
+.navs{
+  text-decoration: none;
+  display: inline;
   color: white;
+  font-weight: lighter;
+  margin-right: 50px;
+  margin-left: 50px;
+ 
+}
+.navs:hover{
+  text-decoration: underline;
+  text-underline-offset: 33px;
+  text-decoration-style: solid;
+  text-decoration-thickness: 1.5px;
+}
+.navs.active{
+  text-decoration: underline;
+  text-underline-offset: 33px;
+  text-decoration-thickness: 1.5px;
 }
 
-.App-link {
-  color: #61dafb;
+.nav span{
+  color: white;
+  font-weight: bold;
+  letter-spacing: 2px;
+
+}
+.nav ul{
+  margin-right: 80px;
+  word-spacing: 5px;
+}
+.navbar{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 40px;
+  position: absolute;
+  width: 100%;
+}
+.icon{
+  margin-left: 50px;
+  margin-top: 15px;
+}
+.line hr {
+  height: 1px;
+  border: 0;
+  width: 483px;
+  background: rgba(220, 220, 220, 0.2);
+  margin-top: 40px;
+  margin-left: 50px;
+}
+#gradient{
+  position: absolute;
+  height: 400px;
+  width: 400px;
+  border-radius: 50%;
+  background: rgba(157, 155, 155, 0.2);
+  top: 34%;
+  left: 64.5%;
+  z-index: 0;
+  display: none;
+}
+.destination-container{
+  background-image: url('images/background-destination-desktop.jpg');
+  height: 100%;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  background-position: center;
+  background-size: cover;
+  
+
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.planet-info{
+  width: 350px;
+}
+.planet h1{
+  color: white;
+  font-family: 'Barlow Condensed';
+  font-weight: lighter;
+  margin-top: 0px;
+  font-size: 25px;
+  letter-spacing: 4px;
+  word-spacing: 5px;
+ 
+ 
+}
+.planet span{
+  color: grey;
+  margin-right: 5px;
+}
+.destination-content{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  padding-top: 0px;
+  align-items: center;
+  gap: 80px;
+  height: 100%;
+  background-image: url('images/background-destination-desktop.jpg');
+  background-position: center;
+  background-size: cover;
+}
+.planet-details{
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 30px;
+
+}
+.planet-more-info{
+  color: white;
+  display: flex;
+  flex-direction: row;
+  gap: 60px;
+  border-top: 1px grey solid;
+  padding: 10px 30px 30px 0px;
+  font-family: 'Barlow Condensed';
+  margin-top: 30px;
+  width: 370px;
+
+}
+.planet-more-info p{
+  font-weight: lighter;
+  color:#d0d6f9;
+  letter-spacing: 3px;
+}
+.planet-more-info span{
+  font-size: 23px;
+  font-weight: lighter;
+}
+.planet{
+  height: 500px;
+  margin-top: 100px;
+}
+.planet img{
+  width: 400px;
+  margin-top: 50px;
+  margin-left: 70px;
+}
+.planet-nav{
+margin-top: 70px;
+margin-bottom: 0px;
+display: flex;
+gap: 20px;
+padding: 20px 20px 0px 0px;
+}
+.planet-nav-item{
+  text-decoration: none;
+  color: #d0d6f9;
+  font-family: 'Barlow Condensed';
+  font-size: 18px;
+  letter-spacing: 2px;
+  
+}
+.planet-nav-item.active{
+  color: white;
+  text-decoration: underline;
+  text-underline-offset: 15px;
+  text-decoration-thickness: 2px;
+}
+.planet-info{
+}
+.planet-info h1{
+  font-size: 110px;
+  margin-bottom: 10px;
+  font-weight: 100;
+  color: white;
+  margin-top: 0px;
+  margin-left: 5px;
+}
+.planet-info div{
+  color: #d0d6f9;
+  text-align: justify;
+  line-height: 30px;
+  width: 400px;
+
+}
+@media(max-width: 1280px) and (min-width: 768px){
+
+  .container-home{
+    background-image: url('images/background-home-tablet.jpg');
+    background-position: center;
+    background-size: cover;
+    height: 1200px;
+  
   }
-  to {
-    transform: rotate(360deg);
+  .content-home{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding-top: 180px;
+
+  }
+  .line{
+    display: none;
+  }
+  #gradient{
+    left: 0%;
+  }
+  .text-home{
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
+    text-align: center;
+  }
+  .explore{
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
+    margin-top: 0px;
+  }
+  .navbar{
+    margin-top: 0px;
+  }
+  .nav span{
+   display: none;
+  }
+  .nav{
+    width: 500px;
+    
+  }
+  .navs{
+    margin-right: 20px;
+    margin-left: 20px;
+    letter-spacing: 2px;
+    font-weight: lighter;
+   
+  }
+  .icon{
+    margin-top: 30px;
+  }
+  .nav ul{
+    margin-right: 0px;
   }
 }
+
+
+
