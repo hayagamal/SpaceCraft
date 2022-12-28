@@ -1,7 +1,15 @@
 import React from 'react'
 import { NavLink } from 'react-router-dom'
-
+import {BiMenu} from 'react-icons/bi'
 function Navbar() {
+  const sideBar =()=>{
+    const x = document.getElementById("navbar-reg");
+    if(x.className === "nav"){
+      x.className += " responsive";
+    }else {
+      x.className = "nav";
+    }
+  }
   return (
     <div className='navbar'>
         <div className='icon'>
@@ -10,12 +18,14 @@ function Navbar() {
         <div className='line'>
             <hr/>
         </div>
-        <div className='nav'>
+        <div id="navbar-reg" className='nav responsive'>
             <ul>
+            <NavLink className="mobile" id="mobile-nav" activeclassname="active" onClick={()=> sideBar()}><BiMenu/></NavLink>
                 <NavLink className="navs" activeclassname="active" to={"/"}><span>00</span> HOME</NavLink>
                 <NavLink className="navs" activeclassname="active" to={"/destination"}><span>01</span> DESTINATION</NavLink>
                 <NavLink className="navs" activeclassname="active" to={"/crew"}><span>02</span> CREW</NavLink>
                 <NavLink className="navs" activeclassname="active" to={"/tech"}><span>03</span> TECHNOLOGY</NavLink>
+                
             </ul>
         </div>
 
